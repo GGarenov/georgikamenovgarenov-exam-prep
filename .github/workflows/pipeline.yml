@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout the repo
       uses: actions/checkout@v4
+    - name: List files for debugging
+      run: ls -al
     - name: Use Node.js latest 20
       uses: actions/setup-node@v4
       with:
